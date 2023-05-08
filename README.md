@@ -1,3 +1,27 @@
+<h1>Hay Postre</h1>
+<h2>Freelance Project</h2>
+
+In progress...
+
+## My second `REAL PROJECT`.
+
+Cake and bakery Shop App for a client. 
+
+You can visit categories, products and add-to-cart. Generate your order and talk to the Admin to finalize the order.
+
+Automated features to let my client do the whole administration of the app. Create, edit and delete products, also add special Tags if there is a festivity. 
+
+`Custom and reusable Image Selector` with API and [Cloudinary](https://cloudinary.com/). Select/view your device images and get images from database (add-edit-delete).
+
+### Developed with
+```
+- NextJS (React)
+- MongoDB
+- Clouadinary for Image Cloud
+- Full CSS (No Framework)
+```
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

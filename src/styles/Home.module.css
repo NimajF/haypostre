@@ -245,7 +245,7 @@
 }
 
 .howToBuyDiv{
-  background-color: #fff8f8;
+  background-color: #ffffff;
   padding: 2rem 0 5rem 0;
   display: flex;
   flex-direction: column;
@@ -253,16 +253,54 @@
   align-items: center;
 }
 .howToBuyInfo{
+  width: 90%;
+  height: 300px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 .howToBuyDiv h4{
   font-size: 2.5rem;
-  color: #634051;
+  font-family: Roboto;
+  color: #3c4858;
+  margin-top: 2rem;
 }
-.howToBuyDiv ul{
+.howToBuyInfo .infoBox{
+  width: 30%;
+  min-height: 150px;
+  padding: 20px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.12);;
+}
+.infoBox{
+  background-color: #3c48580f;
+  font-family: Roboto;
+  font-weight: 300;
+  color: #2b343f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.infoBox svg{
+  font-size: 5rem;
+  color: #525962;
+  font-weight: lighter;
+}
+.infoBox p{
+  width: 70%;
+}
+.infoBox:first-child svg{
+  color: #d7ae7f;
+}
+.infoBox:nth-child(2) svg{
+  color: rgb(231, 207, 238);
+}
+.infoBox:last-child svg{
+  color: #9bc060;
+}
+/* .howToBuyDiv ul{
   width: 40%;
   margin-top: -2rem;
   font-family: Nunito;
@@ -271,14 +309,32 @@
 }
 .howToBuyDiv ul li{
   margin-bottom: 20px;
-}
+} */
 
 @media (max-width: 992px) {
+  .titleDiv p{
+    margin-top: 3rem;
+  }
   .productNav a{
     width: 50%;
   }
   .productNavCard{
     height: 300px;
+  }
+  .howToBuyDiv{
+    height: 700px;
+  }
+  .howToBuyDiv h4{
+    margin-bottom: 7rem;
+    margin-top: -4rem;
+  }
+  .howToBuyInfo{
+    flex-direction: column;
+  }
+  .howToBuyInfo .infoBox{
+    width: 100%;
+    gap: 20px;
+    font-size: .9rem;
   }
 }
 
@@ -308,5 +364,8 @@
   }
   .productNav a{
     width: 90%;
+  }
+  .productNavCard{
+    height: 340px !important;
   }
 }

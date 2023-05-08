@@ -49,6 +49,7 @@ export default function DetailProduct({ product, notFound }) {
                 width={1000}
                 height={500}
                 style={{ objectFit: "cover" }}
+                priority
                 alt={`Imagen del product ${title}`}
               />
             </div>

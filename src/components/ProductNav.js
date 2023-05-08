@@ -7,6 +7,13 @@ import styles from "../styles/Home.module.css";
 
 const productIcons = [
   {
+    icon: <GiPresent />,
+    iconCategory: "tortas",
+    title: "Tortas y Postres",
+    image: "/torta.jpg",
+    alt: "Imagen de un box",
+  },
+  {
     icon: <GiStairsCake />,
     iconCategory: "budines-confiteria",
     title: "Budines/Confitería",
@@ -20,13 +27,7 @@ const productIcons = [
   //   image: "/breakfast.jpg",
   //   alt: "Imagen de un desayuno",
   // },
-  {
-    icon: <GiPresent />,
-    iconCategory: "tortas",
-    title: "Tortas y Postres",
-    image: "/torta.jpg",
-    alt: "Imagen de un box",
-  },
+
   //   {
   //     icon: <IoIceCreamSharp />,
   //     iconCategory: "postres",

@@ -42,7 +42,9 @@ function Cart() {
           src={product.images[0].url}
           // layout="fill"
           // objectFit="cover"
-          fill
+          height={100}
+          width={200}
+          priority
           alt={`Imagen del producto ${product.title}`}
         />
       </div>

@@ -38,6 +38,7 @@ export default function HomeProduct({ product }) {
             width={1000}
             height={500}
             style={{ objectFit: "cover" }}
+            priority
             alt={`Imagen del producto ${product.title}`}
           />
           {product.festivity !== "no" ? (

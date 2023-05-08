@@ -52,9 +52,9 @@ export default function Navbar({ scrollRef }) {
             />
           </span>
         </Link>
-        <Link href="#" className="howToBuy-link">
+        {/* <Link href="#" className="howToBuy-link">
           Cómo comprar
-        </Link>
+        </Link> */}
       </div>
 
       <div className="nav_links">

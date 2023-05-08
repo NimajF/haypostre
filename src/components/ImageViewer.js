@@ -22,8 +22,10 @@ export default function ImageViewer({ images, selectImage }) {
       <button className={`${styles.imgSelect}`} onClick={sImage}>
         <Image
           src={src.url}
-          fill
+          width={100}
+          height={100}
           style={{ objectFit: "cover" }}
+          priority
           alt={`Imagen numero ${src.idx + 1}`}
         />
       </button>
@@ -32,7 +34,7 @@ export default function ImageViewer({ images, selectImage }) {
 
   const allImages = images.map((img, idx) => (
     <div key={idx}>
-      <Img url={img.url} idx={idx} />
+      <Img url={img.url} idx={idx} priority />
     </div>
   ));
 

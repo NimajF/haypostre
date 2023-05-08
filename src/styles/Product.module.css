@@ -201,7 +201,8 @@
     border: 2px solid rgb(214, 145, 206);
 }
 .imgViewer .imgSelect img{
-    width: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 .form{
@@ -372,7 +373,7 @@
     } 
     .productImages{
         width: 100%;
-        margin-bottom: -5rem;
+        margin-bottom: -8rem;
     }
     .imgViewer button{
         width: 25%;

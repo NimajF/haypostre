@@ -9,10 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "cloudinary": "^1.35.0",
+    "emailjs-com": "^3.2.0",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "mongoose": "^7.0.3",
     "next": "13.2.4",
+    "next-auth": "^4.21.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-parallax": "^3.5.1"
   }
 }

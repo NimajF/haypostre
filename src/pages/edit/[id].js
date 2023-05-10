@@ -65,13 +65,16 @@ export default function EditProduct({ product }) {
 
   const updateProduct = async () => {
     try {
-      await fetch(`${process.env.BASE_URL}/api/products/edit/${product._id}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(updatedProduct),
-      });
+      await fetch(
+        `${process.env.NEXT_PUBLIC_SITE_URL}/api/products/edit/${product._id}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(updatedProduct),
+        }
+      );
     } catch (err) {
       console.error(err);
     }
@@ -86,9 +89,12 @@ export default function EditProduct({ product }) {
   const deleteProduct = async () => {
     try {
       deleteAllImages(files[0]);
-      await fetch(`${process.env.BASE_URL}/api/products/edit/${product._id}`, {
-        method: "DELETE",
-      });
+      await fetch(
+        `${process.env.NEXT_PUBLIC_SITE_URL}/api/products/edit/${product._id}`,
+        {
+          method: "DELETE",
+        }
+      );
     } catch (error) {
       console.error(error);
     }
@@ -201,7 +207,9 @@ export default function EditProduct({ product }) {
 }
 
 export async function getServerSideProps({ req, query: { id } }) {
-  const res = await fetch(`${process.env.BASE_URL}/api/products/edit/${id}`);
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_SITE_URL}/api/products/edit/${id}`
+  );
   const session = await getSession({ req });
   if (!session || !res) {
     return {

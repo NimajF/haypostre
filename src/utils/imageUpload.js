@@ -18,7 +18,7 @@ export const imageUpload = async (images) => {
   }
   for (let file of images[1]) {
     console.log(process.env.BASE_URL);
-    const res = await fetch(`${process.env.BASE_URL}/api/destroy`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/destroy`, {
       method: "POST",
       body: JSON.stringify(file),
     }).then((r) => r.json());

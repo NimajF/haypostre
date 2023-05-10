@@ -78,13 +78,16 @@ export default function NewProduct({ session }) {
 
   const createProduct = async () => {
     try {
-      const res = await fetch(`${process.env.BASE_URL}/api/products`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(product),
-      });
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_SITE_URL}/api/products`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(product),
+        }
+      );
       const data = await res.json();
       console.log(data);
     } catch (err) {

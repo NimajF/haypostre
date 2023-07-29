@@ -107,9 +107,7 @@ export default function Order() {
         </div>
       </div> */}
       <h1>Casi listo...</h1>
-      <h2>
-        Podés enviarme el pedido via Whatsapp, Instagram o correo electrónico.
-      </h2>
+      <h2>Podés enviarme el pedido via Whatsapp.</h2>
       <div className={styles.orderContainer}>
         <div className={styles.order}>
           {order.map((obj, idx) => (

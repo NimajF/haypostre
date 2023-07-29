@@ -10,14 +10,14 @@ const productIcons = [
     icon: <GiPresent />,
     iconCategory: "tortas",
     title: "Tortas y Postres",
-    image: "/torta.jpg",
+    image: "/torta1.jpeg",
     alt: "Imagen de un box",
   },
   {
     icon: <GiStairsCake />,
     iconCategory: "budines-confiteria",
     title: "Budines/Confitería",
-    image: "/confiteria.jpg",
+    image: "/budinera.jpeg",
     alt: "Imagen de una torta",
   },
   // {
@@ -46,7 +46,7 @@ export default function ProductNav() {
             <div className={styles.imageDiv}>
               <Image
                 src={icon.image}
-                width={1000}
+                width={1200}
                 height={500}
                 style={{ objectFit: "cover" }}
                 alt={icon.alt}

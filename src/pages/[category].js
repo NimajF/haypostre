@@ -4,7 +4,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import CategoryProduct from "../components/CategoryProduct";
-import ParallaxBg from "@/components/ParallaxBG";
+import ProductsParallaxBg from "@/components/ProductsParallaxBG";
 import styles from "../styles/Category.module.css";
 
 export default function CategoryIndex({ products }) {
@@ -51,9 +51,15 @@ export default function CategoryIndex({ products }) {
       <Head>
         <title>{`${categoryTitle} | Productos`}</title>
       </Head>
-      {/* <ParallaxBg /> */}
-      <h1>{categoryTitle}</h1>
+      <ProductsParallaxBg
+        image={category === "tortas" ? true : false}
+        title={categoryTitle}
+        // tortas={categoryTitle === "tortas"}
+        // budines={categoryTitle === "budines-confiteria"}
+      />
+
       <div className={styles.homeContainer}>
+        {/* <h1 className={styles.categoryTitle}>{categoryTitle}</h1> */}
         <span className={styles.categoryLinks}>{categoryLinks}</span>
         <div className={styles.homeProducts}>
           <div className={styles.sortForm}>

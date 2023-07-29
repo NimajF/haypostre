@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import Cart from "../components/Cart";
 import ParallaxBg from "@/components/ParallaxBG";
+import styles from "../styles/Cart.module.css";
 
 export default function CartPage() {
   // Imagen de <a href="https://www.freepik.es/foto-gratis/deprimente-composicion-lunes-azul_20554502.htm#query=bakery%20box&position=0&from_view=search&track=ais">Freepik</a>
@@ -13,7 +14,7 @@ export default function CartPage() {
         <title>Carrito de compras</title>
       </Head>
       <ParallaxBg cartBg={cartBg} />
-      <h1>Carrito de compras</h1>
+      <h2 className={styles.cartTitle}>Mi carrito</h2>
       <Cart />
     </Layout>
   );

@@ -14,23 +14,29 @@ export default function ParallaxBg({ scrollRef, cartBg }) {
       className={styles.image}
       bgImage={cartBg ? cartBg : image2}
       // bgImage={image2 || image1}
-      strength={cartBg ? 400 : -100}
+      strength={cartBg ? 200 : -100}
     >
       <div
         className={styles.ParallaxDiv}
         style={{
-          height: 500,
+          height: !cartBg ? 500 : 300,
           display: "flex",
           justifyContent: "center",
           // background: "rgb(0, 0, 0, .2)",
         }}
       >
-        {/* <div className={styles.landingDivFilter} /> */}
-        {!cartBg && (
+        <div className={styles.landingDivFilter} />
+        {!cartBg ? (
           <div className={styles.titleDiv}>
             <h1 className={styles.title}>Hay Postre</h1>
             <h2>Pastelería artesanal Rosario</h2>
             <p>🍰 Postres - Tortas - Budines 🥮</p>
+          </div>
+        ) : (
+          <div className={styles.titleDiv}>
+            <h1 className={styles.title} style={{ alignSelf: "flex-start" }}>
+              Carrito de Compras
+            </h1>
           </div>
         )}
       </div>

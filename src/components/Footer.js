@@ -48,10 +48,10 @@ export default function Footer() {
               Whatsapp
             </a>
           </li>
-          <li>
+          {/* <li>
             <FiMail />
             <a href="mailto:dulcevictorinaok@gmail.com">Correo</a>
-          </li>
+          </li> */}
         </ul>
       </div>
       <a

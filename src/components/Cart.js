@@ -81,7 +81,11 @@ function Cart() {
 
   return (
     <div className={styles.cartDiv}>
-      {!ifCartEmpty && <p>Los pedidos se realizan con 72 horas anticipación</p>}
+      {!ifCartEmpty && (
+        <p style={{ fontFamily: "Poppins" }}>
+          Los pedidos se realizan con 48/72 horas de anticipación.
+        </p>
+      )}
       <section className={styles.cartContainer}>
         {ifCartEmpty ? (
           <div className={styles.emptyCartDiv}>

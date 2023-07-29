@@ -1,6 +1,7 @@
 import { BsBoxSeam } from "react-icons/bs";
 import { RiWhatsappLine } from "react-icons/ri";
 import { TbPuzzle } from "react-icons/tb";
+import { AiOutlineEdit } from "react-icons/ai";
 import styles from "../styles/Home.module.css";
 
 export default function HowToBuy() {
@@ -19,11 +20,11 @@ export default function HowToBuy() {
         </div>
         <div className={styles.infoBox}>
           {" "}
-          <TbPuzzle />
+          <AiOutlineEdit />
           <p>
             Al momento de finalizar el pedido, podrás envíar comentarios para
             terminar de personalizar las características del mismo y de sus
-            productos
+            productos.
           </p>
         </div>
         <div className={styles.infoBox}>

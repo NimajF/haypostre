@@ -13,13 +13,14 @@
   justify-content: center; */
   /* border-bottom: 2px solid #edc3d0;; */
   box-shadow: 0px 10px 10px #f6e8ec;
+
 }
 .landingDivFilter{
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgb(0, 0, 0, .10);
+  background-color: rgb(0, 0, 0, .20);
 }
 /* .landingDiv img{
   z-index: 0;
@@ -36,12 +37,13 @@
 
 .titleDiv{
   align-self: center;
-  width: 70%;
-  /* background-color: rgba(245, 242, 237, 0.2);
+  width: 50%;
+  background-color: rgba(245, 242, 237, 0.2);
   backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px); */
+  -webkit-backdrop-filter: blur(2px);
   align-self: center;
   padding: 1.5rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,30 +54,37 @@
   color: #ffffff;
   text-align: center;
   font-family: Roboto;
+  font-family: Palatino Linotype,Book Antiqua,Palatino,serif;
+  font-family: Victor Mono;
   font-size: 4rem;
   font-weight: 600;
   max-height: 75px;
-  margin-bottom: -1rem;
-  text-transform: uppercase;
+  margin-bottom: -.10rem;
+  /* text-transform: uppercase; */
   text-shadow: 1px 1px 8px rgb(46, 46, 46);
 }
 .titleDiv h2{
   text-transform: uppercase;
   text-align: center;
   font-family: Inter;
+  font-family: Palatino Linotype,Book Antiqua,Palatino,serif;
+  font-family: Victor Mono;
   font-size: 2rem;
   font-weight: 600;
   color: #fff;
   max-height: 30px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 8px rgb(46, 46, 46);
 }
 
 .titleDiv p{
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-family: Roboto;
+  font-family: Palatino Linotype,Book Antiqua,Palatino,serif;
+  font-family: Victor Mono;
   font-weight: 400;
   text-align: center;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.682);
@@ -206,15 +215,17 @@
 
 .productNav .productNavCard p{
   padding: 9px;
-  background-color: #fff;
+  background-color: #ffffffd9;
   -webkit-transform: translateY(10px);
   transform: translateY(10px);
   font-size: 1.5rem;
-  font-family: Roboto;
-  text-transform: uppercase;
+  font-family: Victor Mono;
+  letter-spacing: 2px;
+  margin-top: 20rem;
+  /* text-transform: uppercase; */
   /* font-family: 'Times New Roman', serif; */
   font-weight: 300;
-  color: rgb(125, 84, 84);
+  color: rgb(89, 70, 70);
   border-radius: 2px;
   z-index: 2;
   /* text-shadow: 2px 2px 4px rgb(39, 38, 38); */
@@ -251,6 +262,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 .howToBuyInfo{
   width: 90%;
@@ -263,25 +275,31 @@
 .howToBuyDiv h4{
   font-size: 2.5rem;
   font-family: Roboto;
+  font-family: Palatino Linotype,Book Antiqua,Palatino,serif;
+  font-family: Poppins;
+  font-weight: 300;
   color: #3c4858;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 .howToBuyInfo .infoBox{
   width: 30%;
-  min-height: 150px;
-  padding: 20px;
+  min-height: 200px;
+  max-height: 400px;
+  /* padding: 20px; */
   border-radius: 2px;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,.12);;
 }
 .infoBox{
   background-color: #3c48580f;
+  background-color: #f1f1f1;
   font-family: Roboto;
   font-weight: 300;
-  color: #2b343f;
+  color: #c4ced9;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  gap: .5rem;
 }
 .infoBox svg{
   font-size: 5rem;
@@ -290,15 +308,19 @@
 }
 .infoBox p{
   width: 70%;
+  color: #121212;
+  font-family: Poppins;
+  font-weight: 400;
+  white-space: 1px;
 }
 .infoBox:first-child svg{
-  color: #d7ae7f;
+  color: #da8b31;
 }
 .infoBox:nth-child(2) svg{
-  color: rgb(231, 207, 238);
+  color: rgb(203, 127, 226);
 }
 .infoBox:last-child svg{
-  color: #9bc060;
+  color: #739045;
 }
 /* .howToBuyDiv ul{
   width: 40%;
@@ -311,6 +333,20 @@
   margin-bottom: 20px;
 } */
 
+@media (max-width: 1200px){
+  .howToBuyInfo{
+    flex-direction: column;
+    height: 100%;
+  }
+  .howToBuyDiv h4{
+    margin-bottom: 20px;
+  }
+  .howToBuyInfo .infoBox{
+    width: 100%;
+    font-size: .9rem;
+  }
+}
+
 @media (max-width: 992px) {
   .titleDiv p{
     margin-top: 3rem;
@@ -321,20 +357,12 @@
   .productNavCard{
     height: 300px;
   }
-  .howToBuyDiv{
-    height: 700px;
-  }
+  /* .howToBuyDiv{
+    height: 1200px;
+  } */
   .howToBuyDiv h4{
-    margin-bottom: 7rem;
-    margin-top: -4rem;
-  }
-  .howToBuyInfo{
-    flex-direction: column;
-  }
-  .howToBuyInfo .infoBox{
-    width: 100%;
-    gap: 20px;
-    font-size: .9rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
   }
 }
 
@@ -342,6 +370,10 @@
   .titleDiv {
     width: 100%;
     padding: 0;
+    height: 300px;
+    border-radius: 0;
+    background-color: rgba(245, 242, 237, 0.15);
+    backdrop-filter: blur(3px);
   }
   .titleDiv h1{
     margin: 0;
@@ -350,12 +382,13 @@
   }
   .titleDiv h2{
     font-size: 1.5rem;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 0;
     margin-left: 0;
   }
   .titleDiv p{
     font-size: 1rem;
+    word-spacing: 5px;
   }
 
   .productNav {
@@ -367,5 +400,14 @@
   }
   .productNavCard{
     height: 340px !important;
+  }
+  .productNav .productNavCard p{
+    margin-top: 16rem;
+  }
+  .howToBuyInfo .infoBox{
+    width: 100%;
+    padding: 10px;
+    gap: 20px;
+    font-size: .9rem;
   }
 }

@@ -28,7 +28,7 @@ export default function Home() {
           <div className={styles.homeContainer}>
             <ProductNav />
 
-            <h2 style={{ textAlign: "center" }}></h2>
+            {/* <h2 style={{ textAlign: "center" }}></h2> */}
           </div>
           <HowToBuy />
         </main>

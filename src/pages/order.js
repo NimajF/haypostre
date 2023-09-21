@@ -106,8 +106,10 @@ export default function Order() {
           <button onClick={handleRedirect}>Inicio</button>
         </div>
       </div> */}
-      <h1>Casi listo...</h1>
-      <h2>Podés enviarme el pedido via Whatsapp.</h2>
+      <div className={styles.orderPageTitle}>
+        <h1 style={{ fontFamily: "Inter" }}>Casi listo...</h1>
+        <h2>Seguimos el pedido vía WhatsApp.</h2>
+      </div>
       <div className={styles.orderContainer}>
         <div className={styles.order}>
           {order.map((obj, idx) => (

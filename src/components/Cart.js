@@ -44,6 +44,7 @@ function Cart() {
           // objectFit="cover"
           height={100}
           width={200}
+          style={{ objectFit: "cover" }}
           priority
           alt={`Imagen del producto ${product.title}`}
         />

@@ -85,7 +85,7 @@ export default function DetailProduct({ product, notFound }) {
               className={styles.addToCart}
               passHref
             >
-              Añadir a la cesta
+              Añadir al carrito
             </Link>
             <h3>{description}</h3>
             <div className={styles.content}>

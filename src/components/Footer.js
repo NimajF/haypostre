@@ -44,8 +44,22 @@ export default function Footer() {
           </li>
           <li>
             <FaWhatsapp />
-            <a href="https://wa.link/dbef8i" rel="noopener noreferrer">
+            <a
+              href="https://wa.link/dbef8i"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Whatsapp
+            </a>
+          </li>
+          <li>
+            {/* <FaWhatsapp /> */}
+            <a
+              href="https://wa.link/dbef8i"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Empresariales/Bares
             </a>
           </li>
           {/* <li>

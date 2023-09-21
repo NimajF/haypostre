@@ -14,6 +14,7 @@ export default function ParallaxBg({ scrollRef, cartBg }) {
       className={styles.image}
       bgImage={cartBg ? cartBg : image2}
       // bgImage={image2 || image1}
+      blur={{ min: -15, max: 15 }}
       strength={cartBg ? 200 : -100}
     >
       <div
@@ -33,8 +34,8 @@ export default function ParallaxBg({ scrollRef, cartBg }) {
             <p>🍰 Postres - Tortas - Budines 🥮</p>
           </div>
         ) : (
-          <div className={styles.titleDiv}>
-            <h1 className={styles.title} style={{ alignSelf: "flex-start" }}>
+          <div className={styles.titleDiv} style={{ paddingTop: "2rem" }}>
+            <h1 className={styles.title} style={{ fontSize: "3rem" }}>
               Carrito de Compras
             </h1>
           </div>

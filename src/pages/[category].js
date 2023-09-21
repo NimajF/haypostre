@@ -79,7 +79,7 @@ export default function CategoryIndex({ products }) {
                   <option value="-price">
                     Precio (Del mas bajo al mas alto)
                   </option>
-                  {/* <option></option> */}
+                  <option value="orden">Nombre (De la A a la Z)</option>
                 </select>
                 <span className={styles.customArrow}></span>
               </div>

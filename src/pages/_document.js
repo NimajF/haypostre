@@ -9,6 +9,8 @@ export default function Document() {
           property="og:description"
           content="Pastelería artesanal Rosario"
         />
+        <meta property="og:url" content={process.env.NEXT_PUBLIC_SITE_URL} />
+        <meta property="og:image" content="/hayPostre.PNG" />
         <meta name="twitter:card" content="summary_large_image" />
         <link
           rel="icon"

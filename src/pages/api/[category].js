@@ -10,14 +10,31 @@ export default async function getCategory(req, res) {
   } = req;
 
   function sortMethods() {
-    if (sort === "recent") {
-      return { _id: -1 };
-    } else {
-      if (sort === "-price") {
+    //   if (sort === "recent") {
+    //     return { _id: -1 };
+    //   } else {
+    //     if (sort === "-price") {
+    //       return { price: 1 };
+    //     }
+    //   }
+    //   return { price: -1 };
+    // }
+    switch (sort) {
+      case "recent":
+        return { _id: -1 };
+
+      case "-price":
         return { price: 1 };
-      }
+
+      case "price":
+        return { price: -1 };
+
+      case "orden":
+        return { title: 1 };
+
+      default:
+        return { _id: -1 };
     }
-    return { price: -1 };
   }
 
   switch (method) {

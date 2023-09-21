@@ -7,9 +7,8 @@ export default function ProductsParallaxBg({ image, title }) {
   const [img, setImg] = useState("");
   const [load, setLoad] = useState(false);
 
-  const img1 = "/torta.jpg";
-  const img2 =
-    "https://images.unsplash.com/photo-1581797833924-255242b10b3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80";
+  const img1 = "/tortasBG.jpeg";
+  const img2 = "/budinesBG.jpeg";
 
   useEffect(() => {
     if (image) {
@@ -29,6 +28,7 @@ export default function ProductsParallaxBg({ image, title }) {
       className={`${styles.image} ${load ? styles.fadeIn : ""}`}
       bgImage={img}
       // bgImage={image2 || image1}
+      blur={{ min: -13, max: 15 }}
       strength={200}
       onLoad={handleImageLoad}
     >
@@ -41,7 +41,7 @@ export default function ProductsParallaxBg({ image, title }) {
           // background: "rgb(0, 0, 0, .2)",
         }}
       >
-        {/* <div className={styles.landingDivFilter} /> */}
+        <div className={styles.landingDivFilter} />
 
         <div className={styles.titleDiv}>
           <h1 className={styles.title}>{title}</h1>

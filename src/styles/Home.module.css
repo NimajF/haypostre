@@ -10,8 +10,8 @@
   height: 600px;
   /* display: flex;
   flex-direction: column;
-  justify-content: center; */
-  /* border-bottom: 2px solid #edc3d0;; */
+  justify-content: flex-start; 
+  border-bottom: 2px solid #edc3d0;; */
   box-shadow: 0px 10px 10px #f6e8ec;
 
 }
@@ -31,35 +31,41 @@
 /* .image{
   position: relative;
 } */
-/* .image img{
+.image img{
   top: -90px;
-} */
+}
 
 .titleDiv{
-  align-self: center;
-  width: 50%;
-  background-color: rgba(245, 242, 237, 0.2);
-  backdrop-filter: blur(2px);
+  align-self: flex-start;
+  width: 30%;
+  background-color: rgba(249, 231, 251, 0.2);
+  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(2px);
   align-self: center;
   padding: 1.5rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   z-index: 1;
+  /* border: 1px solid rgb(148, 148, 148); */
   border-radius: 5px;
 }
 .titleDiv h1{
   color: #ffffff;
   text-align: center;
   font-family: Roboto;
-  font-family: Palatino Linotype,Book Antiqua,Palatino,serif;
+  /* font-family: Poppins; */
   font-family: Victor Mono;
-  font-size: 4rem;
-  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+  /* font-family:'Times New Roman', Times, serif; */
+  font-size: 4.5rem;
+  font-weight: 1000;
+  font-weight: 500;
   max-height: 75px;
-  margin-bottom: -.10rem;
+  /* margin-bottom: -.10rem; */
+  margin: 0;
+  /* margin-bottom: 1rem; */
   /* text-transform: uppercase; */
   text-shadow: 1px 1px 8px rgb(46, 46, 46);
 }
@@ -69,18 +75,21 @@
   font-family: Inter;
   font-family: Palatino Linotype,Book Antiqua,Palatino,serif;
   font-family: Victor Mono;
-  font-size: 2rem;
+  font-size: 16px;
   font-weight: 600;
   color: #fff;
   max-height: 30px;
-  margin-bottom: 2rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
   text-shadow: 1px 1px 8px rgb(46, 46, 46);
 }
 
 .titleDiv p{
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 14px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-family: Roboto;
   font-family: Palatino Linotype,Book Antiqua,Palatino,serif;
@@ -139,9 +148,9 @@
   margin-top: 5.5rem;
 }
 .productNav a{
-  padding: 5px;
+  /* padding: 5px; */
   width: 40%;
-  background-color: white;
+  /* background-color: white; */
   transition: .2s ease-in;
 }
 .productNav .imageDiv{
@@ -177,6 +186,10 @@
   justify-content: center;
   align-items: center; */
   cursor: pointer;
+}
+.productNav a:hover{
+  transform: translateY(-5px);
+  transform: scale(1.02);
 }
 
 /* .productNav .productNavCard div{
@@ -214,18 +227,23 @@
 } */
 
 .productNav .productNavCard p{
-  padding: 9px;
-  background-color: #ffffffd9;
+  padding: 20px;
+  /* background-color: #ffffffb3;
+  background-color: rgba(2, 2, 2, 0.253); */
   -webkit-transform: translateY(10px);
+  /* backdrop-filter: blur(4px); */
+  text-shadow: 1px 1px 10px black;
   transform: translateY(10px);
-  font-size: 1.5rem;
-  font-family: Victor Mono;
-  letter-spacing: 2px;
-  margin-top: 20rem;
+  font-size: 2rem;
+  font-family: Poppins;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 2px; */
+  margin-top: -15rem;
   /* text-transform: uppercase; */
   /* font-family: 'Times New Roman', serif; */
-  font-weight: 300;
   color: rgb(89, 70, 70);
+  color: white;
   border-radius: 2px;
   z-index: 2;
   /* text-shadow: 2px 2px 4px rgb(39, 38, 38); */
@@ -279,15 +297,15 @@
   font-family: Poppins;
   font-weight: 300;
   color: #3c4858;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .howToBuyInfo .infoBox{
   width: 30%;
   min-height: 200px;
   max-height: 400px;
   /* padding: 20px; */
-  border-radius: 2px;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,.12);;
+  /* border-radius: 2px; */
+  /* box-shadow: 0 1px 2px 0 rgba(0,0,0,.12);; */
 }
 .infoBox{
   background-color: #3c48580f;
@@ -309,8 +327,9 @@
 .infoBox p{
   width: 70%;
   color: #121212;
-  font-family: Poppins;
+  font-family: Inter;
   font-weight: 400;
+  line-height: 24px;
   white-space: 1px;
 }
 .infoBox:first-child svg{
@@ -348,8 +367,19 @@
 }
 
 @media (max-width: 992px) {
+  .titleDiv {
+    width: 90%;
+  }
+  .titleDiv h1{
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+  .titleDiv h2{
+    margin-left: 0;
+  }
   .titleDiv p{
     margin-top: 3rem;
+    width: 100%;
   }
   .productNav a{
     width: 50%;
@@ -361,12 +391,16 @@
     height: 1200px;
   } */
   .howToBuyDiv h4{
+    font-size: 2.2rem;
     margin-bottom: 3rem;
     margin-top: 1rem;
   }
 }
 
 @media (max-width: 768px) {
+  .image img{
+    top: 10px;
+  }
   .titleDiv {
     width: 100%;
     padding: 0;
@@ -402,7 +436,7 @@
     height: 340px !important;
   }
   .productNav .productNavCard p{
-    margin-top: 16rem;
+    margin-top: -12rem;
   }
   .howToBuyInfo .infoBox{
     width: 100%;

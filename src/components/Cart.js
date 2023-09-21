@@ -126,6 +126,10 @@ function Cart() {
                 Finalizar pedido
                 {/* <AiOutlineWhatsApp /> */}
               </Link>
+              <Link href="/tortas" className={styles.continueShoppingBtn}>
+                Seguir comprando
+                {/* <AiOutlineWhatsApp /> */}
+              </Link>
             </div>
           </div>
         )}

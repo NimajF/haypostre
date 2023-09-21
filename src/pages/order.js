@@ -179,8 +179,8 @@ export default function Order() {
             style={msgCopied ? { background: "#bcffbc" } : {}}
           />
           <span className={styles.suggestion}>
-            Podés usar este pedido autogenerado y terminar de personalizarlo.
-            <span onClick={handleCopy}>Copiar mensaje</span>
+            No te olvides de personalizar y copiar tu pedido.
+            <span onClick={handleCopy}>Copiar pedido</span>
           </span>
 
           <div className={styles.orderLinks}>

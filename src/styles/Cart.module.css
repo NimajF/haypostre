@@ -675,11 +675,16 @@
         top: 10px;
     }
 
+    .purchaseDiv{
+        height: 200px !important;
+    }
+
     .purchaseBtn{
+        margin-top: 5rem;
         width: 100%;
     }
     .continueShoppingBtn{
-        margin-bottom: -4rem !important;
+        margin-bottom: -6rem !important;
     }
     .orderContainer{
         flex-direction: column;

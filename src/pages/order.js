@@ -134,40 +134,6 @@ export default function Order() {
           </span>
         </div>
         <div className={styles.emailDiv}>
-          {/* <h3 className={styles.emailH3}>Enviame un mail</h3> */}
-          {/* <form onSubmit={sendEmail}>
-            <p>
-              <label htmlFor="name">Nombre</label>
-              <input type="text" name="name" placeholder="Escribe tu nombre" />
-            </p>
-            <p>
-              <label htmlFor="email">Correo Electronico</label>
-              <input type="email" name="email" placeholder="Escribe tu email" />
-            </p>
-            <p>
-              <label htmlFor="subject">Asunto</label>
-              <input
-                type="text"
-                name="subject"
-                placeholder="Escribe un asunto"
-              />
-            </p>
-            <p>
-              <label htmlFor="message">Mensaje</label>
-              <textarea
-                name="message"
-                defaultValue={orderMsg}
-                ref={msgRef}
-                style={msgCopied ? { background: "#bcffbc" } : {}}
-              />
-              <span className={styles.suggestion}>
-                Podés usar este pedido autogenerado y terminar de
-                personalizarlo.
-              </span>
-              <span onClick={handleCopy}>Copiar mensaje</span>
-            </p>
-            <button type="submit">Enviar</button>
-          </form> */}
           <h3 className={styles.emailH3} style={{ marginBottom: "20px" }}>
             Detalles del pedido
           </h3>
@@ -178,19 +144,20 @@ export default function Order() {
             ref={msgRef}
             style={msgCopied ? { background: "#bcffbc" } : {}}
           />
-          <span className={styles.suggestion}>
-            No te olvides de personalizar y copiar tu pedido.
+          <span className={styles.suggestion} style={{display: "flex", flexDirection: "column", justifyContent: "flex-start"}} >
+            No te olvides de personalizar y copiar tu pedido antes de continuar. Una vez estés en WhatsApp, pegá el pedido.
             <span onClick={handleCopy}>Copiar pedido</span>
           </span>
 
-          <div className={styles.orderLinks}>
-            <a
+          <div className={styles.orderLinks} style={{pointerEvents: !msgCopied ? "none" : "inherit", backgroundColor: !msgCopied ? "#595959" : "rgb(120, 203, 87)"}} >
+            <a 
               href="https://wa.link/dbef8i"
               rel="noopener noreferrer"
               target="_blank"
               onClick={handleRedirect}
+              disabled={msgCopied}
             >
-              Whatsapp
+                Whatsapp
             </a>
 
             {/* <a

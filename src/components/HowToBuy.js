@@ -13,9 +13,7 @@ export default function HowToBuy() {
           {" "}
           <BsBoxSeam />
           <p>
-            Para realizar un pedido es tan fácil como agregar al carrito y
-            clickear en comprar. El pedido se reserva con una seña del 50% la
-            cual se descontará del total.
+            Para realizar un pedido es tan fácil como agregar los productos al carrito de compras.
           </p>
         </div>
         <div className={styles.infoBox}>

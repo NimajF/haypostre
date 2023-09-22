@@ -122,12 +122,12 @@ function Cart() {
             >
               Total: <i style={{ fontWeight: "400" }}>${totalPrice}</i>
             </h4> */}
-              <Link href="/order" className={styles.purchaseBtn}>
-                Finalizar pedido
+            <Link href="/tortas" className={styles.continueShoppingBtn}>
+                Seguir comprando
                 {/* <AiOutlineWhatsApp /> */}
               </Link>
-              <Link href="/tortas" className={styles.continueShoppingBtn}>
-                Seguir comprando
+              <Link href="/order" className={styles.purchaseBtn}>
+                Finalizar pedido
                 {/* <AiOutlineWhatsApp /> */}
               </Link>
             </div>

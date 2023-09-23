@@ -28,8 +28,8 @@ export default function HowToBuy() {
         <div className={styles.infoBox}>
           <RiWhatsappLine />
           <p>
-            Luego podrás mandarme un mensaje por WhatsApp. Una vez enviado el
-            pedido me pondré en contacto para coordinar métodos de pago y
+            Luego podrás mandarnos un mensaje por WhatsApp. Una vez enviado el
+            pedido nos pondremos en contacto para coordinar métodos de pago y
             dirección de envío.
           </p>
         </div>

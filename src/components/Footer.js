@@ -30,7 +30,7 @@ export default function Footer() {
         </ul> */}
         <ul>
           <li>
-            <b>Contactame</b>
+            <b>Contacto</b>
           </li>
           <li>
             <FiInstagram />
